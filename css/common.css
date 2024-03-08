@@ -12,3 +12,142 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+button {
+  width: auto;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  color: #FFFFFF;
+  background-color: #4E75FF;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: #6C8CFF;
+}
+
+/* 1 task */
+
+#categories h2 {
+  color: #2E2F42;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
+
+}
+
+#categories li {
+  width: 392px;
+  list-style: none;
+  background-color: #F6F6FE;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+#categories ul {
+  color: #2E2F42;
+  padding-left: 0;
+}
+
+#categories ul>li {
+  width: 360px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* 3 task */
+
+input {
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+input:hover {
+  border: 1px solid #000000;
+}
+
+#name-input::placeholder {
+  color: #2E2F42;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* 4 task */
+
+.login-form>label {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form>label>input {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+/* 5 task */
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+}
+
+.change-color {
+  width: 148px;
+}
+
+/* 6 task */
+
+#controls {
+  max-width: max-content;
+  display: flex;
+  gap: 16px;
+  background-color: #F6F6FE;
+  width: 100%;
+  padding: 32px;
+  margin-bottom: 16px;
+}
+
+#controls>input {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2E2F42;
+  border: 1px solid #808080;
+}
+
+#controls>button {
+  width: 120px;
+  margin-top: 0;
+}
+
+[data-destroy] {
+  background-color: #FF4E4E;
+}
+
+[data-destroy]:hover {
+  background-color: #FF7070;
+}
+
+#boxes {
+  display: flex;
+  width: max-content;
+  gap: 16px;
+  background-color: #F6F6FE;
+  padding: 32px;
+}
