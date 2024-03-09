@@ -10,38 +10,30 @@ const boxes = document.querySelector('#boxes');
 
 btnCr.addEventListener("click", () => {
   if (amount.value <= 100 && amount.value >= 1) {
-    dell();
-    adder();
+    delBox();
+    addBox();
     amount.value = '';
   } else {
     alert('Please enter a number between 1 and 100');
     amount.value = '';
   }
 });
-function adder() {
+function addBox() {
   boxes.insertAdjacentHTML("afterbegin", createBoxes(amount));
 }
 function createBoxes(amount) {
   let code = [];
   let size = 30;
-  if (amount.value <= 100 && amount.value >= 1) {
     for (let i = 0; i < amount.value; i++){
-      code.push(`<div id="boxes${i}"><style>#boxes${i} {height: ${size}px;width:  ${size}px;background-color: ${getRandomHexColor()};}</style></div>`);
+      code.push(`<div id="boxes${i}" style="height: ${size}px; width: ${size}px; background-color: ${getRandomHexColor()};"></div>`);
       size += 10;
     }
   return code.join('');
-  } else {
-    return code;
-  } 
 }
 
-btnDel.addEventListener("click", () => {
-  amount.value = '';
-});
+btnDel.addEventListener("click", delBox);
 
-btnDel.addEventListener("click", dell);
-
-function dell() {
+function delBox() {
   const boxContainer = document.querySelector('#boxes');
   boxContainer.innerHTML = '';
 }

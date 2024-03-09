@@ -65,6 +65,25 @@ button:hover {
   font-weight: 400;
 }
 
+/* 2 task */
+
+.gallery {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  max-width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.gallery-item img {
+  object-fit: cover;
+}
+
 /* 3 task */
 
 input {

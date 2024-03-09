@@ -1,6 +1,6 @@
 const regForm = document.querySelector(".login-form");
 regForm.addEventListener("submit", checkForm);
-const users = {};
+const formData = {};
 function checkForm (event){
     event.preventDefault();
     const formA = event.target;
@@ -10,10 +10,10 @@ function checkForm (event){
         return alert('All form fields must be filled in');
         
     } else {
-        users[emailForm] = passwForm;
+        formData.email = emailForm;
+        formData.password = passwForm;
         formA.reset();
     }
-    console.log(users);
-
+    console.log(formData);
 }
 

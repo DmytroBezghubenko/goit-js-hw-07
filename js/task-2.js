@@ -27,28 +27,10 @@ const images = [
     alt: 'Zebras on Zebra',
   },
 ];
+
 const list = document.querySelector(".gallery");
 const markup = images
-  .map((img) => `<li class="list-item new"><img src="${img.url}" alt="${img.alt}" /></li>`)
+  .map((img) => `<li class="gallery-item new"><img src="${img.url}" alt="${img.alt}" width="360" height="300" /></li>`)
   .join("");
 list.insertAdjacentHTML("afterbegin", markup);
-  
-
-list.style.display = 'flex';
-list.style.listStyleType = 'none';
-list.style.padding = '0';
-list.style.flexWrap = 'wrap';
-list.style.rowGap = '48px';
-list.style.columnGap = '24px';
-list.style.maxWidth = '1128px'
-list.style.marginLeft = 'auto';
-list.style.marginRight = 'auto';
-list.style.justifyContent = 'center';
-
-const sizePhoto = document.querySelectorAll("img");
-sizePhoto.forEach(phot => {
-  phot.style.width = '360px';
-  phot.style.height = '300px';
-  phot.style.objectFit = 'cover';
-});
 
